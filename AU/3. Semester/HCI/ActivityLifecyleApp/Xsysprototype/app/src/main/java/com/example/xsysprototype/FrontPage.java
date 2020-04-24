@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FrontPage extends AppCompatActivity {
 
+    //TODO save instance and make other activities return to it when pressing the back button
     User user;
     ImageButton laundryButton, gymButton, barButton, musicButton;
     TextView userNameTextView, userBuildingTextView, userRoomTextView;
@@ -20,9 +22,10 @@ public class FrontPage extends AppCompatActivity {
         setContentView(R.layout.activity_front_page);
 
         try {
-            user = (User) getIntent().getExtras().getSerializable("user");
-        } finally {
-            user = new User("Test User", "00", "00", true, true);
+            user = (User) getIntent().getExtras().get("user");
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "There was an error loading your user, please try again", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }
 
         userNameTextView = findViewById(R.id.userNameTextView);
