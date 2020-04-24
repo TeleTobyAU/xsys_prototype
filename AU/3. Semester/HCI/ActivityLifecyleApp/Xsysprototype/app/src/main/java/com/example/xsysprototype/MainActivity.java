@@ -5,55 +5,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     User user;
-    ImageButton laundryButton, gymButton, barButton, musicButton;
+    EditText userNameEditText, buildingNumberEditText, roomNumberEditText;
+    Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        user = new User("Magnus Haxen", "45", "19");
+        //TODO Make edittexts, remember error detection
 
-        laundryButton = findViewById(R.id.laundryButton);
-        gymButton = findViewById(R.id.gymButton);
-        barButton = findViewById(R.id.barButton);
-        musicButton = findViewById(R.id.musicButton);
-
-        laundryButton.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(this, LaundryActivity.class);
+                user = new User(userNameEditText.toString(), buildingNumberEditText.toString(), roomNumberEditText.toString(), false, false);
+                Intent startIntent = new Intent(getApplicationContext(), FrontPage.class);
+                startIntent.putExtra("user", user);
                 startActivity(startIntent);
             }
         });
 
-        gymButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(this, GymActivity.class);
-                startActivity(startIntent);
-            }
-        });
-
-        barButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(this, BarActivity.class);
-                startActivity(startIntent);
-            }
-        });
-
-        musicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent= new Intent(this, MusicActivity.class);
-                startActivity(startIntent);
-            }
-        });
     }
 }

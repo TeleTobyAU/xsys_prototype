@@ -45,7 +45,35 @@
         android:layout_height="fill_parent"
         android:background="@color/colorPrimary">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:text="@string/gym_details"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:text="@string/gym_more_info"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
         <Button
+            android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

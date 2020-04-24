@@ -8,4 +8,8 @@
     <string name="gym_image">The icon for the gym</string>
     <string name="laundry_image">The icon for the laundry</string>
     <string name="music_image">The icon for the music</string>
+    <string name="gym_details">Membership of the gym is valid for a half year period, being terminated feb. 28th and aug. 31st.
+    Membership price is 200dkk per half year, and must be renewed by payment at termination dates.
+    Click button to sign up.</string>
+    <string name="gym_more_info"><a href="http://www.kollegiekontoret.dk/kollegier/vilhelm-kiers-kollegium/foreninger/motionsrummet/">Tap here for more information.</a></string>
 </resources>
