@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LaundryActivity"
+    android:background="@color/colorPrimary">
+
+    <!--The top view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Laundry status"
+            android:textSize="40sp"
+            android:layout_margin="5dp"
+            app:fontFamily="@font/roboto_mono_bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Available: 5 washers &amp; 2 dryers"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_mono_bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:text="Washers free:"
+            app:fontFamily="@font/roboto_mono_bold" />
+
+        <!-- Washer icons -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:rowCount="3"
+            android:columnCount="4"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:src="@drawable/laundry_icon_grey"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="1"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="3"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="4"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="8"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="11"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:text="Dryers free:"
+            app:fontFamily="@font/roboto_mono_bold" />
+
+        <!-- Dryer icons -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:rowCount="1"
+            android:columnCount="4">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="1"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/laundry_icon_grey"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:text="4"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Xsys prototype</string>
+    <string name="user_name">Magnus Haxen</string>
+    <string name="blok">Blok: 45</string>
+    <string name="værelse">Værelse: 19</string>
+    <string name="address">Blok: 45 Værelse: 19</string>
+    <string name="bar_image">The icon for the bar</string>
+    <string name="gym_image">The icon for the gym</string>
+    <string name="laundry_image">The icon for the laundry</string>
+    <string name="music_image">The icon for the music</string>
+</resources>
