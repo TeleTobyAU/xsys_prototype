@@ -11,7 +11,7 @@
     <!--The top view -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary">
 
         <TextView
@@ -24,9 +24,38 @@
             app:fontFamily="@font/roboto_mono_bold" />
     </RelativeLayout>
 
+    <!--The middle view -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:text="@string/music_details"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:text="@string/music_more_info"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/signUpButton"
@@ -34,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/colorPrimary"
-            android:text="Sign up to the music room"
+            android:text="Sign up for the music room"
             android:textSize="30sp"
             android:fontFamily="@font/roboto_mono_bold"
             android:textColor="@color/textColor" />

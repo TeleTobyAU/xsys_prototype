@@ -12,4 +12,8 @@
     Membership price is 200dkk per half year, and must be renewed by payment at termination dates.
     Click button to sign up.</string>
     <string name="gym_more_info"><a href="http://www.kollegiekontoret.dk/kollegier/vilhelm-kiers-kollegium/foreninger/motionsrummet/">Tap here for more information.</a></string>
+    <string name="music_details">Membership of the music room is valid for a half year period.
+        Being terminated on jun. 30th and dec. 31st. The membership price is 100dkk for a single person for a period, and 200dkk for a band.
+        Membership renewal happens on renewed payment at termination dates.</string>
+    <string name="music_more_info"><a href ="http://www.kollegiekontoret.dk/kollegier/vilhelm-kiers-kollegium/foreninger/musikforeningen/"/>Tap here for more information</string>
 </resources>
