@@ -11,4 +11,9 @@ public class LaundryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laundry);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }

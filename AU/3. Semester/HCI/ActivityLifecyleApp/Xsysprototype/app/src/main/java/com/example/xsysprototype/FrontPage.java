@@ -48,7 +48,6 @@ public class FrontPage extends AppCompatActivity {
                 Intent startIntent = new Intent(getApplicationContext(), LaundryActivity.class);
                 startIntent.putExtra("user", user);
                 startActivity(startIntent);
-                finish();
             }
         });
 
@@ -68,7 +67,6 @@ public class FrontPage extends AppCompatActivity {
                 Intent startIntent = new Intent(getApplicationContext(), BarActivity.class);
                 startIntent.putExtra("user", user);
                 startActivity(startIntent);
-                finish();
             }
         });
 
@@ -78,7 +76,6 @@ public class FrontPage extends AppCompatActivity {
                 Intent startIntent= new Intent(getApplicationContext(), MusicActivity.class);
                 startIntent.putExtra("user", user);
                 startActivity(startIntent);
-                finish();
             }
         });
     }

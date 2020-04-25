@@ -22,21 +22,23 @@
             android:textSize="40sp"
             android:layout_margin="5dp"
             app:fontFamily="@font/roboto_mono_bold" />
+    </RelativeLayout>
 
-        <TextView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/signUpButton"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Free timeslots today: 3"
-            android:textColor="@color/textColor"
-            android:textSize="20sp"
-            app:fontFamily="@font/roboto_mono_bold" />
+            android:background="@color/colorPrimary"
+            android:text="Sign up to the music room"
+            android:textSize="30sp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:textColor="@color/textColor" />
+
     </RelativeLayout>
 
 </LinearLayout>

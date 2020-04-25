@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent startIntent = new Intent(getApplicationContext(), FrontPage.class);
                     startIntent.putExtra("user", user);
                     startActivity(startIntent);
+                    finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Please fill in all fields with your information", Toast.LENGTH_SHORT).show();
                 }
