@@ -40,4 +40,13 @@
 
     </RelativeLayout>
 
+    <!-- The calendar view -->
+    <CalendarView
+        android:id="@+id/musicCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textColor"
+        android:shownWeekCount="1"
+        android:layout_margin="5dp" />
+
 </LinearLayout>

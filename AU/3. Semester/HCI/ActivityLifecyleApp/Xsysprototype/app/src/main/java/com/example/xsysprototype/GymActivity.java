@@ -36,6 +36,7 @@ public class GymActivity extends AppCompatActivity {
                     user.setGymMember(true);
                     Toast.makeText(getApplicationContext(), "You are now a member of the gym", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), GymActivity.class).putExtra("user", user));
+                    finish();
                 }
             });
         }

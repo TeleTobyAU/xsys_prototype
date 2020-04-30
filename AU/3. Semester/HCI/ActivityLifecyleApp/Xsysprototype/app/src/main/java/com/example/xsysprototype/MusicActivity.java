@@ -6,10 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class MusicActivity extends AppCompatActivity {
 
+    CalendarView calendar;
     Button signUpButton;
     User user;
 
@@ -26,6 +30,8 @@ public class MusicActivity extends AppCompatActivity {
 
         if (user.isMusicMember()) {
             setContentView(R.layout.activity_music_member);
+            calendar = findViewById(R.id.musicCalendarView);
+
         } else {
             setContentView(R.layout.activity_music);
 
@@ -36,6 +42,7 @@ public class MusicActivity extends AppCompatActivity {
                     user.setMusicMember(true);
                     Toast.makeText(getApplicationContext(), "You are now a member of the music room", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), MusicActivity.class).putExtra("user", user));
+                    finish();
                 }
             });
         }
